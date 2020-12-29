@@ -19,12 +19,17 @@
 	}
 }
 
-img {
+img:not(.badge) {
 	width: 345px;
 }
 
+img.badge {
+	margin-left: .6rem;
+	margin-bottom: 0;
+}
+
 @media only screen and (max-width: 768px) {
-	img {
+	img:not(.badge) {
 		width: 50%;
 	}
 }
